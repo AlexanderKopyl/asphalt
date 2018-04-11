@@ -1,0 +1,94 @@
+/*==========  Desktop First  ========== */
+/* Large Devices, Wide Screens */
+@media only screen and (max-width: 1200px) {
+  /* line 5, ../sass/media.sass */
+  .navbar-container {
+    max-width: 950px; }
+    /* line 7, ../sass/media.sass */
+    .navbar-container ul {
+      font-size: 90%; }
+
+  /* line 12, ../sass/media.sass */
+  .header .carousel__content .carusel-caption__form-content .carusel-caption__form-content__heading {
+    font-size: 18px; } }
+/* */
+/* Medium Devices, Desktops */
+@media only screen and (max-width: 992px) {
+  /* line 19, ../sass/media.sass */
+  .section-slider {
+    display: none; }
+
+  /* line 21, ../sass/media.sass */
+  #hidde-block {
+    display: block; }
+
+  /* line 27, ../sass/media.sass */
+  .main .contact-form .container .contact-form__heading br {
+    display: none; }
+  /* line 29, ../sass/media.sass */
+  .main .contact-form .container form {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+    /* line 31, ../sass/media.sass */
+    .main .contact-form .container form input {
+      margin-bottom: 10px;
+      margin-right: 0; }
+
+  /* line 38, ../sass/media.sass */
+  .footer .contact-form-footer .container .contact-form__heading br {
+    display: none; }
+  /* line 40, ../sass/media.sass */
+  .footer .contact-form-footer .container form {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+    /* line 42, ../sass/media.sass */
+    .footer .contact-form-footer .container form input {
+      margin-bottom: 10px;
+      margin-right: 0; } }
+/* */
+/* Small Devices, Tablets */
+@media only screen and (max-width: 768px) {
+  /* line 51, ../sass/media.sass */
+  br {
+    display: none; } }
+/* */
+/* Extra Small Devices, Phones */
+@media only screen and (max-width: 480px) {
+  /* line 59, ../sass/media.sass */
+  .main .carousel-control-prev, .main .carousel-control-next {
+    bottom: 66%; }
+  /* line 62, ../sass/media.sass */
+  .main .our-works .our-works__group-btn {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+    /* line 64, ../sass/media.sass */
+    .main .our-works .our-works__group-btn .our-works__btn {
+      margin-bottom: 10px; } }
+/* */
+/* Custom, iPhone Retina */
+@media only screen and (max-width: 320px) {
+  /* line 73, ../sass/media.sass */
+  .main .our-works p {
+    font-size: 14px; }
+  /* line 76, ../sass/media.sass */
+  .main .our-works__group-content br {
+    display: none; } }
+/* */
+/*==========  Mobile First  ========== */
+/* Custom, iPhone Retina */
+/* */
+/* Extra Small Devices, Phones */
+/* */
+/* Small Devices, Tablets */
+/* */
+/* Medium Devices, Desktops */
+/* */
+/* Large Devices, Wide Screens */
+
+/*# sourceMappingURL=media.css.map */

@@ -1,0 +1,311 @@
+@import url('../css/fonts.css')
+*
+  margin: 0
+  padding: 0
+  box-sizing: border-box
+h3
+  color: #000
+
+body
+  overflow-x: hidden
+
+a
+  text-decoration: none
+  &:hover
+    text-decoration: none
+
+.header
+  //Навигация
+  .navbar
+    background-color: #FFD51A
+    .navbar-container
+      .navbar-toggler__button
+        border-color: #000
+        color: #000
+        font-size: 24px
+        margin-right: 10px
+      .nav-link
+        font-family: "ArialRegular", sans-serif
+        font-size: 100%
+        color: #000
+      .nav-link__Tel
+        font-family: "ArialBold", sans-serif
+  //Слайдер
+  .carousel__content
+    position: absolute
+    Z-INDEX: 10
+    display: flex
+    flex-direction: column
+    justify-content: space-around
+    height: 100%
+    .carusel-caption__form-content
+      height: 100%
+    .carusel-caption__form
+      display: flex
+      width: 80%
+      background-color: rgba(239, 232, 221, 0.9)
+      height: 180px
+      align-items: center
+      margin-bottom: 100px
+      margin-left: auto
+      margin-right: auto
+      form
+        justify-content: space-evenly
+        width: 90%
+        margin: auto
+        .form-control__input-name
+          width: 265px
+          height: 50px
+          border-radius: 10px
+        .form-control__input-phone
+          width: 265px
+          height: 50px
+          border-radius: 10px
+        .form-control__input-btn
+          border-radius: 10px
+          width: 265px
+          height: 50px
+          border: 3px solid #000
+          background-color: #FFD51A
+          font-family: "ArialBold", sans-serif
+          font-size: 20px
+    .carusel-caption__form-content
+      h3
+        font-family: "ArialBold", sans-serif
+        font-size: 20px
+        color: #000
+        width: 80%
+        margin: auto
+        text-align: center
+        margin-bottom: 0
+  .carusel-caption_heading
+    text-align: center
+    h1
+      text-transform: uppercase
+      font-family: "ArialBold", sans-serif
+      font-size: 30px
+      color: #000
+    p
+      color: #000
+      text-transform: uppercase
+      font-size: 18px
+      font-family: "ArialBold", sans-serif
+  //Спрятанный блок с описанием
+  .header__hidde-caption
+    display: none
+  .header__hidde-caption
+    .hidde-block__inner-up-box-with-content
+      background-color: #FAFBFC
+      background-image: url("../img/header-bac.jpeg")
+      background-size: cover
+    .hidde-block__inner-content
+      .hidde-block__inner-content-btn
+        border-radius: 10px
+        width: 265px
+        height: 50px
+        border: 3px solid #000
+        background-color: #FFD51A
+        font-family: "ArialBold", sans-serif
+        font-size: 20px
+      p
+        font-family: "ArialBold", sans-serif
+        font-size: 18px
+        text-align: center
+        color: #000000
+      .hidde-block__inner-heading
+        font-family: "ArialBold", sans-serif
+        font-size: 26px
+        text-align: center
+        color: #000000
+    .hidde-block__inner__form-content
+      .hidde-block__inner__form-content__heading
+        font-family: "ArialBold", sans-serif
+        font-size: 18px
+        text-align: center
+      .hidde-block__form
+        flex-direction: column
+    .hidde-block__box-with-form
+      background-color: #FCD700
+      input
+        width: 265px
+        height: 50px
+        border-radius: 10px
+        margin-bottom: 10px
+      button
+        border-radius: 10px
+        width: 265px
+        height: 50px
+        border: 3px solid #000
+        background-color: white
+        font-family: "ArialBold", sans-serif
+        font-size: 20px
+
+.main
+  //Why
+  .why
+    background-color: #FAFBFC
+  .why-heading
+    font-family: "ArialRegular", sans-serif
+    font-size: 25px
+  .card-body
+    .cards-heading__one, .cards-heading__three
+      margin-bottom: 40px
+    .cards-heading__two, .cards-heading__five, .cards-heading__four, .cards-heading__six
+      margin-bottom: 60px
+    h4
+      font-family: "ArialBold", sans-serif
+      font-size: 16px
+
+    p
+      font-family: "ArialRegular", sans-serif
+      font-size: 17px
+      font-weight: 500
+  .our-works
+    p
+      font-family: "ArialRegular", sans-serif
+      font-size: 17px
+      font-weight: bold
+      text-align: center
+      padding-right: 1%
+    .roadImg
+      border: 4px solid #FED415
+    .our-works__heading
+      font-family: "ArialRegular", sans-serif
+      font-size: 25px
+      font-weight: 600
+      text-align: center
+    .our-works_cards-heading-first, .our-works_cards-heading-second, .our-works_cards-heading-third, .our-works_cards-heading-fours
+      font-family: "ArialBold", sans-serif
+
+      font-size: 17px
+      text-align: center
+    .our-works__group-content
+      height: 100%
+      display: flex
+      flex-direction: column
+      justify-content: center
+      align-items: center
+    .our-works__group-btn
+      display: flex
+      .our-works__btn
+        margin-right: 10px
+        display: flex
+        width: 190px
+        height: 40px
+        background-color: #FFD51A
+        flex-direction: row
+        align-items: center
+        justify-content: center
+        border-radius: 12px
+        color: #000
+        font-size: 17px
+        font-family: "ArialRegular", sans-serif
+  .contact-form
+    background-color: #FFD51A
+    .container
+      form
+        justify-content: center
+        button
+          border-radius: 10px
+          width: 265px
+          height: 50px
+          border: 3px solid #000
+          background-color: white
+          font-family: "ArialBold", sans-serif
+          font-size: 20px
+        input
+          width: 265px
+          height: 50px
+          margin-right: 35px
+          border-radius: 10px
+      .contact-form__heading
+        font-family: "ArialBold", sans-serif
+        font-size: 20px
+        text-align: center
+  .work-examples
+    .carousel
+      border: 1px solid #DFDFDF
+    .work-examples__heading
+      font-family: "ArialRegular", sans-serif
+      font-size: 30px
+      font-weight: bold
+      text-align: center
+      text-transform: uppercase
+  .about-us
+    .about-us__btn
+      display: flex
+      width: 270px
+      background-color: #FFD51A
+      height: 47px
+      border: 2px solid #000
+      border-radius: 10px
+      align-items: center
+      justify-content: center
+      color: #000
+      font-family: "ArialBold", sans-serif
+      font-size: 20px
+      margin: auto
+    b
+      font-family: "ArialBold", sans-serif
+    img
+      display: block
+      margin: auto
+    p
+      font-family: "ArialRegular", sans-serif
+      font-size: 20px
+      text-align: center
+    .about-us__heading
+      font-family: "ArialBold", sans-serif
+      font-size: 30px
+      text-align: center
+
+.footer
+  .contact-us
+    background-color: #FAFBFC
+    .contact-us__heading
+      font-family: "ArialBold", sans-serif
+      font-size: 30px
+      text-align: center
+    .contact-us__adress, .contact-us__email, .contact-us__phone, .contact-us__schedule
+      font-family: "ArialBold", sans-serif
+      font-size: 20px
+      display: flex
+      align-items: center
+      margin-bottom: 15px
+      svg
+        margin-right: 3%
+    .about-us__data
+      font-family: "ArialRegular", sans-serif
+      font-size: 20px
+      display: block
+  .contact-form-footer
+    background-color: #FFD51A
+    .container
+      form
+        justify-content: center
+        button
+          border-radius: 10px
+          width: 265px
+          height: 50px
+          border: 3px solid #000
+          background-color: white
+          font-family: "ArialBold", sans-serif
+          font-size: 20px
+        input
+          border-radius: 10px
+          width: 265px
+          height: 50px
+          margin-right: 35px
+      .contact-form__heading
+        font-family: "ArialBold", sans-serif
+        font-size: 20px
+        text-align: center
+  .basement
+    text-align: center
+    font-size: 20px
+    font-family: "ArialBold", sans-serif
+    a
+      color: #000
+
+
+
