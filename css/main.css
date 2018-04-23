@@ -21,24 +21,73 @@ a {
   a:hover {
     text-decoration: none; }
 
-/* line 19, ../sass/main.sass */
+/* line 18, ../sass/main.sass */
+#myModal .modal-title, #myModalFind-the-cost .modal-title {
+  color: #000;
+  font-family: "ArialBold", sans-serif; }
+/* line 21, ../sass/main.sass */
+#myModal .btn-modal, #myModalFind-the-cost .btn-modal {
+  border: 2px solid #000;
+  color: #000;
+  background-color: #fff;
+  font-weight: bold; }
+/* line 26, ../sass/main.sass */
+#myModal .modal-content, #myModalFind-the-cost .modal-content {
+  background-color: #FFD51A; }
+/* line 30, ../sass/main.sass */
+#myModal .modal-body__consult form input, #myModalFind-the-cost .modal-body__consult form input {
+  outline-color: transparent;
+  display: block;
+  border: none;
+  background: transparent;
+  border-bottom: 2px solid #000;
+  padding-bottom: 10px;
+  margin-bottom: 30px;
+  width: 300px;
+  font-size: 20px;
+  line-height: 1;
+  text-align: center;
+  font-style: italic;
+  color: #000; }
+/* line 44, ../sass/main.sass */
+#myModal .modal-body__consult form input::-webkit-input-placeholder, #myModalFind-the-cost .modal-body__consult form input::-webkit-input-placeholder {
+  color: #000; }
+/* line 46, ../sass/main.sass */
+#myModal .modal-body__consult form input[type="text"]::-moz-placeholder, #myModalFind-the-cost .modal-body__consult form input[type="text"]::-moz-placeholder {
+  color: #000; }
+/* line 48, ../sass/main.sass */
+#myModal .modal-body__consult form button, #myModalFind-the-cost .modal-body__consult form button {
+  color: #000;
+  background-color: #FFF;
+  font-weight: bold;
+  height: 53px;
+  font-size: 19px;
+  cursor: pointer;
+  border-width: 2px;
+  border-style: solid;
+  border-color: #000;
+  -o-border-image: initial;
+     border-image: initial;
+  width: 300px; }
+
+/* line 65, ../sass/main.sass */
 .header .navbar {
   background-color: #FFD51A; }
-  /* line 22, ../sass/main.sass */
+  /* line 68, ../sass/main.sass */
   .header .navbar .navbar-container .navbar-toggler__button {
     border-color: #000;
     color: #000;
     font-size: 24px;
     margin-right: 10px; }
-  /* line 27, ../sass/main.sass */
+  /* line 73, ../sass/main.sass */
   .header .navbar .navbar-container .nav-link {
     font-family: "ArialRegular", sans-serif;
     font-size: 100%;
     color: #000; }
-  /* line 31, ../sass/main.sass */
+  /* line 77, ../sass/main.sass */
   .header .navbar .navbar-container .nav-link__Tel {
     font-family: "ArialBold", sans-serif; }
-/* line 34, ../sass/main.sass */
+/* line 80, ../sass/main.sass */
 .header .carousel__content {
   position: absolute;
   Z-INDEX: 10;
@@ -52,10 +101,10 @@ a {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   height: 100%; }
-  /* line 41, ../sass/main.sass */
+  /* line 87, ../sass/main.sass */
   .header .carousel__content .carusel-caption__form-content {
     height: 100%; }
-  /* line 43, ../sass/main.sass */
+  /* line 89, ../sass/main.sass */
   .header .carousel__content .carusel-caption__form {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -69,24 +118,24 @@ a {
     margin-bottom: 100px;
     margin-left: auto;
     margin-right: auto; }
-    /* line 52, ../sass/main.sass */
+    /* line 98, ../sass/main.sass */
     .header .carousel__content .carusel-caption__form form {
       -webkit-box-pack: space-evenly;
           -ms-flex-pack: space-evenly;
               justify-content: space-evenly;
       width: 90%;
       margin: auto; }
-      /* line 56, ../sass/main.sass */
+      /* line 102, ../sass/main.sass */
       .header .carousel__content .carusel-caption__form form .form-control__input-name {
         width: 265px;
         height: 50px;
         border-radius: 10px; }
-      /* line 60, ../sass/main.sass */
+      /* line 106, ../sass/main.sass */
       .header .carousel__content .carusel-caption__form form .form-control__input-phone {
         width: 265px;
         height: 50px;
         border-radius: 10px; }
-      /* line 64, ../sass/main.sass */
+      /* line 110, ../sass/main.sass */
       .header .carousel__content .carusel-caption__form form .form-control__input-btn {
         border-radius: 10px;
         width: 265px;
@@ -95,7 +144,7 @@ a {
         background-color: #FFD51A;
         font-family: "ArialBold", sans-serif;
         font-size: 20px; }
-  /* line 73, ../sass/main.sass */
+  /* line 119, ../sass/main.sass */
   .header .carousel__content .carusel-caption__form-content h3 {
     font-family: "ArialBold", sans-serif;
     font-size: 20px;
@@ -104,30 +153,30 @@ a {
     margin: auto;
     text-align: center;
     margin-bottom: 0; }
-/* line 81, ../sass/main.sass */
+/* line 127, ../sass/main.sass */
 .header .carusel-caption_heading {
   text-align: center; }
-  /* line 83, ../sass/main.sass */
+  /* line 129, ../sass/main.sass */
   .header .carusel-caption_heading h1 {
     text-transform: uppercase;
     font-family: "ArialBold", sans-serif;
     font-size: 30px;
     color: #000; }
-  /* line 88, ../sass/main.sass */
+  /* line 134, ../sass/main.sass */
   .header .carusel-caption_heading p {
     color: #000;
     text-transform: uppercase;
     font-size: 18px;
     font-family: "ArialBold", sans-serif; }
-/* line 94, ../sass/main.sass */
+/* line 140, ../sass/main.sass */
 .header .header__hidde-caption {
   display: none; }
-/* line 97, ../sass/main.sass */
+/* line 143, ../sass/main.sass */
 .header .header__hidde-caption .hidde-block__inner-up-box-with-content {
   background-color: #FAFBFC;
   background-image: url("../img/header-bac.jpeg");
   background-size: cover; }
-/* line 102, ../sass/main.sass */
+/* line 148, ../sass/main.sass */
 .header .header__hidde-caption .hidde-block__inner-content .hidde-block__inner-content-btn {
   border-radius: 10px;
   width: 265px;
@@ -136,39 +185,39 @@ a {
   background-color: #FFD51A;
   font-family: "ArialBold", sans-serif;
   font-size: 20px; }
-/* line 110, ../sass/main.sass */
+/* line 156, ../sass/main.sass */
 .header .header__hidde-caption .hidde-block__inner-content p {
   font-family: "ArialBold", sans-serif;
   font-size: 18px;
   text-align: center;
   color: #000000; }
-/* line 115, ../sass/main.sass */
+/* line 161, ../sass/main.sass */
 .header .header__hidde-caption .hidde-block__inner-content .hidde-block__inner-heading {
   font-family: "ArialBold", sans-serif;
   font-size: 26px;
   text-align: center;
   color: #000000; }
-/* line 121, ../sass/main.sass */
+/* line 167, ../sass/main.sass */
 .header .header__hidde-caption .hidde-block__inner__form-content .hidde-block__inner__form-content__heading {
   font-family: "ArialBold", sans-serif;
   font-size: 18px;
   text-align: center; }
-/* line 125, ../sass/main.sass */
+/* line 171, ../sass/main.sass */
 .header .header__hidde-caption .hidde-block__inner__form-content .hidde-block__form {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column; }
-/* line 127, ../sass/main.sass */
+/* line 173, ../sass/main.sass */
 .header .header__hidde-caption .hidde-block__box-with-form {
   background-color: #FCD700; }
-  /* line 129, ../sass/main.sass */
+  /* line 175, ../sass/main.sass */
   .header .header__hidde-caption .hidde-block__box-with-form input {
     width: 265px;
     height: 50px;
     border-radius: 10px;
     margin-bottom: 10px; }
-  /* line 134, ../sass/main.sass */
+  /* line 180, ../sass/main.sass */
   .header .header__hidde-caption .hidde-block__box-with-form button {
     border-radius: 10px;
     width: 265px;
@@ -178,50 +227,50 @@ a {
     font-family: "ArialBold", sans-serif;
     font-size: 20px; }
 
-/* line 145, ../sass/main.sass */
+/* line 191, ../sass/main.sass */
 .main .why {
   background-color: #FAFBFC; }
-/* line 147, ../sass/main.sass */
+/* line 193, ../sass/main.sass */
 .main .why-heading {
   font-family: "ArialRegular", sans-serif;
   font-size: 25px; }
-/* line 151, ../sass/main.sass */
+/* line 197, ../sass/main.sass */
 .main .card-body .cards-heading__one, .main .card-body .cards-heading__three {
   margin-bottom: 40px; }
-/* line 153, ../sass/main.sass */
+/* line 199, ../sass/main.sass */
 .main .card-body .cards-heading__two, .main .card-body .cards-heading__five, .main .card-body .cards-heading__four, .main .card-body .cards-heading__six {
   margin-bottom: 60px; }
-/* line 155, ../sass/main.sass */
+/* line 201, ../sass/main.sass */
 .main .card-body h4 {
   font-family: "ArialBold", sans-serif;
   font-size: 16px; }
-/* line 159, ../sass/main.sass */
+/* line 205, ../sass/main.sass */
 .main .card-body p {
   font-family: "ArialRegular", sans-serif;
   font-size: 17px;
   font-weight: 500; }
-/* line 164, ../sass/main.sass */
+/* line 210, ../sass/main.sass */
 .main .our-works p {
   font-family: "ArialRegular", sans-serif;
   font-size: 17px;
   font-weight: bold;
   text-align: center;
   padding-right: 1%; }
-/* line 170, ../sass/main.sass */
+/* line 216, ../sass/main.sass */
 .main .our-works .roadImg {
   border: 4px solid #FED415; }
-/* line 172, ../sass/main.sass */
+/* line 218, ../sass/main.sass */
 .main .our-works .our-works__heading {
   font-family: "ArialRegular", sans-serif;
   font-size: 25px;
   font-weight: 600;
   text-align: center; }
-/* line 177, ../sass/main.sass */
+/* line 223, ../sass/main.sass */
 .main .our-works .our-works_cards-heading-first, .main .our-works .our-works_cards-heading-second, .main .our-works .our-works_cards-heading-third, .main .our-works .our-works_cards-heading-fours {
   font-family: "ArialBold", sans-serif;
   font-size: 17px;
   text-align: center; }
-/* line 182, ../sass/main.sass */
+/* line 228, ../sass/main.sass */
 .main .our-works .our-works__group-content {
   height: 100%;
   display: -webkit-box;
@@ -237,12 +286,12 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center; }
-/* line 188, ../sass/main.sass */
+/* line 234, ../sass/main.sass */
 .main .our-works .our-works__group-btn {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
-  /* line 190, ../sass/main.sass */
+  /* line 236, ../sass/main.sass */
   .main .our-works .our-works__group-btn .our-works__btn {
     margin-right: 10px;
     display: -webkit-box;
@@ -265,15 +314,15 @@ a {
     color: #000;
     font-size: 17px;
     font-family: "ArialRegular", sans-serif; }
-/* line 203, ../sass/main.sass */
+/* line 249, ../sass/main.sass */
 .main .contact-form {
   background-color: #FFD51A; }
-  /* line 206, ../sass/main.sass */
+  /* line 252, ../sass/main.sass */
   .main .contact-form .container form {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center; }
-    /* line 208, ../sass/main.sass */
+    /* line 254, ../sass/main.sass */
     .main .contact-form .container form button {
       border-radius: 10px;
       width: 265px;
@@ -282,29 +331,30 @@ a {
       background-color: white;
       font-family: "ArialBold", sans-serif;
       font-size: 20px; }
-    /* line 216, ../sass/main.sass */
+    /* line 262, ../sass/main.sass */
     .main .contact-form .container form input {
       width: 265px;
       height: 50px;
       margin-right: 35px;
       border-radius: 10px; }
-  /* line 221, ../sass/main.sass */
+  /* line 267, ../sass/main.sass */
   .main .contact-form .container .contact-form__heading {
     font-family: "ArialBold", sans-serif;
     font-size: 20px;
     text-align: center; }
-/* line 226, ../sass/main.sass */
+/* line 272, ../sass/main.sass */
 .main .work-examples .carousel {
   border: 1px solid #DFDFDF; }
-/* line 228, ../sass/main.sass */
+/* line 274, ../sass/main.sass */
 .main .work-examples .work-examples__heading {
   font-family: "ArialRegular", sans-serif;
   font-size: 30px;
   font-weight: bold;
   text-align: center;
   text-transform: uppercase; }
-/* line 235, ../sass/main.sass */
+/* line 281, ../sass/main.sass */
 .main .about-us .about-us__btn {
+  cursor: pointer;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -323,33 +373,33 @@ a {
   font-family: "ArialBold", sans-serif;
   font-size: 20px;
   margin: auto; }
-/* line 248, ../sass/main.sass */
+/* line 295, ../sass/main.sass */
 .main .about-us b {
   font-family: "ArialBold", sans-serif; }
-/* line 250, ../sass/main.sass */
+/* line 297, ../sass/main.sass */
 .main .about-us img {
   display: block;
   margin: auto; }
-/* line 253, ../sass/main.sass */
+/* line 300, ../sass/main.sass */
 .main .about-us p {
   font-family: "ArialRegular", sans-serif;
   font-size: 20px;
   text-align: center; }
-/* line 257, ../sass/main.sass */
+/* line 304, ../sass/main.sass */
 .main .about-us .about-us__heading {
   font-family: "ArialBold", sans-serif;
   font-size: 30px;
   text-align: center; }
 
-/* line 263, ../sass/main.sass */
+/* line 310, ../sass/main.sass */
 .footer .contact-us {
   background-color: #FAFBFC; }
-  /* line 265, ../sass/main.sass */
+  /* line 312, ../sass/main.sass */
   .footer .contact-us .contact-us__heading {
     font-family: "ArialBold", sans-serif;
     font-size: 30px;
     text-align: center; }
-  /* line 269, ../sass/main.sass */
+  /* line 316, ../sass/main.sass */
   .footer .contact-us .contact-us__adress, .footer .contact-us .contact-us__email, .footer .contact-us .contact-us__phone, .footer .contact-us .contact-us__schedule {
     font-family: "ArialBold", sans-serif;
     font-size: 20px;
@@ -360,23 +410,23 @@ a {
         -ms-flex-align: center;
             align-items: center;
     margin-bottom: 15px; }
-    /* line 275, ../sass/main.sass */
+    /* line 322, ../sass/main.sass */
     .footer .contact-us .contact-us__adress svg, .footer .contact-us .contact-us__email svg, .footer .contact-us .contact-us__phone svg, .footer .contact-us .contact-us__schedule svg {
       margin-right: 3%; }
-  /* line 277, ../sass/main.sass */
+  /* line 324, ../sass/main.sass */
   .footer .contact-us .about-us__data {
     font-family: "ArialRegular", sans-serif;
     font-size: 20px;
     display: block; }
-/* line 281, ../sass/main.sass */
+/* line 328, ../sass/main.sass */
 .footer .contact-form-footer {
   background-color: #FFD51A; }
-  /* line 284, ../sass/main.sass */
+  /* line 331, ../sass/main.sass */
   .footer .contact-form-footer .container form {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center; }
-    /* line 286, ../sass/main.sass */
+    /* line 333, ../sass/main.sass */
     .footer .contact-form-footer .container form button {
       border-radius: 10px;
       width: 265px;
@@ -385,23 +435,23 @@ a {
       background-color: white;
       font-family: "ArialBold", sans-serif;
       font-size: 20px; }
-    /* line 294, ../sass/main.sass */
+    /* line 341, ../sass/main.sass */
     .footer .contact-form-footer .container form input {
       border-radius: 10px;
       width: 265px;
       height: 50px;
       margin-right: 35px; }
-  /* line 299, ../sass/main.sass */
+  /* line 346, ../sass/main.sass */
   .footer .contact-form-footer .container .contact-form__heading {
     font-family: "ArialBold", sans-serif;
     font-size: 20px;
     text-align: center; }
-/* line 303, ../sass/main.sass */
+/* line 350, ../sass/main.sass */
 .footer .basement {
   text-align: center;
   font-size: 20px;
   font-family: "ArialBold", sans-serif; }
-  /* line 307, ../sass/main.sass */
+  /* line 354, ../sass/main.sass */
   .footer .basement a {
     color: #000; }
 

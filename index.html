@@ -4,15 +4,108 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <link type="text/css" rel="icon" sizes="5x10" href="img/favicon.png" type="image/png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
           type="text/css">
     <link rel="stylesheet" href="css/theme.css" type="text/css">
     <link rel="stylesheet" href="css/main.css" type="text/css">
     <link rel="stylesheet" href="css/media.css" type="text/css">
-</head>
+    <title>Test Title</title>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-117552263-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
 
+        gtag('config', 'UA-117552263-1');
+    </script>
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript"> (function (d, w, c) {
+        (w[c] = w[c] || []).push(function () {
+            try {
+                w.yaCounter48479777 = new Ya.Metrika({
+                    id: 48479777,
+                    clickmap: true,
+                    trackLinks: true,
+                    accurateTrackBounce: true,
+                    webvisor: true
+                });
+            } catch (e) {
+            }
+        });
+        var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () {
+            n.parentNode.insertBefore(s, n);
+        };
+        s.type = "text/javascript";
+        s.async = true;
+        s.src = "https://mc.yandex.ru/metrika/watch.js";
+        if (w.opera == "[object Opera]") {
+            d.addEventListener("DOMContentLoaded", f, false);
+        } else {
+            f();
+        }
+    })(document, window, "yandex_metrika_callbacks"); </script>
+    <noscript>
+        <div><img src="https://mc.yandex.ru/watch/48479777" style="position:absolute; left:-9999px;" alt=""/></div>
+    </noscript><!-- /Yandex.Metrika counter -->
+</head>
 <body>
 
+<div id="myModal" class="modal fade">
+    <div class="modal-dialog">
+        <div class="modal-content my-5">
+            <div class="modal-header">
+
+
+                <button type="button" class="close" style="font-size: 30px;" data-dismiss="modal" aria-hidden="true"><i
+                        class="fas fa-times"></i></button>
+            </div>
+            <div class="modal-body__consult px-4 pb-5">
+                <h5 class="modal-title text-center mb-3">ЗАПОЛНИТЕ ФОРМУ И МЫ ПЕРЕЗВОНИМ ВАМ В БЛИЖАЙШЕЕ ВРЕМЯ!</h5>
+                <form action="consult.php" method="POST" class="d-flex align-items-center flex-column">
+                    <div class="form-group">
+                        <input type="text" class="modal-form__input-name mb-3" name="name"
+                               placeholder="Ваше Имя">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="modal-form__input-phone mb-4"
+                               name="phone" placeholder="Ваш телефон">
+                    </div>
+                    <button type="submit" class="btn form-control__input-btn">Отправить</button>
+                </form>
+
+            </div>
+        </div>
+    </div>
+</div>
+<div id="myModalFind-the-cost" class="modal fade">
+    <div class="modal-dialog">
+        <div class="modal-content my-5">
+            <div class="modal-header">
+                <button type="button" class="close" style="font-size: 30px;" data-dismiss="modal" aria-hidden="true"><i
+                        class="fas fa-times"></i></button>
+            </div>
+            <div class="modal-body__consult px-4 pb-5">
+                <h5 class="modal-title text-center mb-3">ЗАПОЛНИТЕ ФОРМУ И МЫ ПЕРЕЗВОНИМ ВАМ В БЛИЖАЙШЕЕ ВРЕМЯ!</h5>
+                <form action="myModalFind-the-cost.php" method="POST" class="d-flex align-items-center flex-column">
+                    <div class="form-group">
+                        <input type="text" class="modal-form__input-name mb-3" name="name"
+                               placeholder="Ваше Имя">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="modal-form__input-phone mb-4"
+                               name="phone" placeholder="Ваш телефон">
+                    </div>
+                    <button type="submit" class="btn form-control__input-btn">Отправить</button>
+                </form>
+
+            </div>
+        </div>
+    </div>
+</div>
 <header class="header">
     <nav class="navbar navbar navbar-expand-md navbar-dark p-0 py-1" draggable="true">
         <div class="container navbar-container p-0">
@@ -24,15 +117,13 @@
             </button>
             <div class="collapse navbar-collapse text-center justify-content-end" id="navbar2SupportedContent">
                 <ul class="navbar-nav w-100 d-flex justify-content-around">
-                    <li class="nav-item"><a class="nav-link" href="#">Главная</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Услуги</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Примеры работ</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">О компании</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Контакты</a></li>
-                    <li class="nav-item"><a class="nav-link nav-link__Tel" href="tel:7 123 456 78 90">+7 123 456 78
-                        90</a></li>
+                    <li class="nav-item"><a class="nav-link anchor" href="#">Главная</a></li>
+                    <li class="nav-item"><a class="nav-link anchor" href="#offers">Услуги</a></li>
+                    <li class="nav-item"><a class="nav-link anchor" href="#works">Примеры работ</a></li>
+                    <li class="nav-item"><a class="nav-link anchor" href="#aboutUs">О компании</a></li>
+                    <li class="nav-item"><a class="nav-link anchor" href="#contacts">Контакты</a></li>
+                    <li class="nav-item"><a class="nav-link nav-link__Tel anchor" href="tel:89034708207">8 (903) 470 82 07</a></li>
                 </ul>
-
             </div>
         </div>
     </nav>
@@ -51,7 +142,7 @@
                         <div class="carousel__content w-100 mt-3">
                             <div class="carusel-caption_heading">
                                 <div class="carusel-caption__content">
-                                    <h1 >АСФАЛЬТИРОВАНИЕ И БЛАГОУСТРОЙСТВО <br>
+                                    <h1>АСФАЛЬТИРОВАНИЕ И БЛАГОУСТРОЙСТВО <br>
                                         КОММЕРЧЕСКИХ ОБЪЕКТОВ И ПРИДОМОВЫХ ТЕРИТОРИЙ <br>
                                         В ШАХТАХ И РОСТОВСКОЙ ОБЛАСТИ
                                     </h1>
@@ -63,10 +154,12 @@
                             <div class="carusel-caption__form">
 
                                 <div class="carusel-caption__form-content w-100 d-flex flex-column">
-                                    <h3 class="carusel-caption__form-content__heading">ЗАПОЛНИТЕ ДАННЫЕ И ПОЛУЧИТЕ ДЕТАЛЬНЫЙ РАСЧЕТ СТОИМОСТИ <br>
+                                    <h3 class="carusel-caption__form-content__heading">ЗАПОЛНИТЕ ДАННЫЕ И ПОЛУЧИТЕ
+                                        ДЕТАЛЬНЫЙ РАСЧЕТ СТОИМОСТИ <br>
                                         РАБОТ И МАТЕРИАЛОВ ДЛЯ ВАШЕГО ОБЪЕКТА В ТЕЧЕНИИ 24 ЧАСОВ
                                     </h3>
-                                    <form action="calculation.php" class="d-flex align-items-center mb-md-2 mb-xl-auto">
+                                    <form action="calculation.php" method="POST"
+                                          class="d-flex align-items-center mb-md-2 mb-xl-auto">
                                         <div class="form-group">
                                             <input type="text" class="form-control form-control__input-name" name="name"
                                                    placeholder="Ваше Имя">
@@ -81,15 +174,15 @@
                             </div>
                         </div>
                         <div class="carousel-item active">
-                            <img class="d-block  w-100" src="img/slider.png">
+                            <img class="d-block  w-100" height="600" src="img/slider.png">
 
                         </div>
                         <div class="carousel-item">
-                            <img class="d-block w-100" src="img/maxresdefault.png">
+                            <img class="d-block w-100" height="600" src="img/maxresdefault.png">
 
                         </div>
                         <div class="carousel-item">
-                            <img class="d-block w-100" src="img/maxresdefault.png">
+                            <img class="d-block w-100" height="600" src="img/third-pic-slider.png">
 
                         </div>
                     </div>
@@ -109,25 +202,29 @@
         <div class="hidde-block__inner">
             <div class="py-3 hidde-block__inner-up-box-with-content ">
                 <div class="hidde-block__inner-content">
-                    <h1 class="hidde-block__inner-heading">АСФАЛЬТИРОВАНИЕ И БЛАГОУСТРОЙСТВО <br>
+                    <h2 class="hidde-block__inner-heading">АСФАЛЬТИРОВАНИЕ И БЛАГОУСТРОЙСТВО <br>
                         КОММЕРЧЕСКИХ ОБЪЕКТОВ И ПРИДОМОВЫХ ТЕРИТОРИЙ <br>
                         В ШАХТАХ И РОСТОВСКОЙ ОБЛАСТИ
-                    </h1>
+                    </h2>
                     <p>ПОЛУЧИТЕ КАЧЕСТВЕННОЕ ДОРОЖНОЕ ПОКРЫТИЕ УЖЕ ЧЕРЕЗ НЕСКОЛЬКО ДНЕЙ, РАБОТАЯ С
                         НАДЕЖНОЙ КОМПАНИЕЙ
                     </p>
                     <div class="hidde-block__inner-content-btn-box text-center">
-                        <button class="hidde-block__inner-content-btn">Наши услуги</button>
+                        <a href="#offers" class="anchor">
+                            <button class="hidde-block__inner-content-btn">Наши услуги</button>
+                        </a>
                     </div>
                 </div>
             </div>
             <div class="hidde-block__box-with-form py-3 ">
 
                 <div class="hidde-block__inner__form-content w-100 d-flex flex-column">
-                    <h3 class="hidde-block__inner__form-content__heading">ЗАПОЛНИТЕ ДАННЫЕ И ПОЛУЧИТЕ ДЕТАЛЬНЫЙ РАСЧЕТ СТОИМОСТИ <br>
+                    <h3 class="hidde-block__inner__form-content__heading">ЗАПОЛНИТЕ ДАННЫЕ И ПОЛУЧИТЕ ДЕТАЛЬНЫЙ РАСЧЕТ
+                        СТОИМОСТИ <br>
                         РАБОТ И МАТЕРИАЛОВ ДЛЯ ВАШЕГО ОБЪЕКТА В ТЕЧЕНИИ 24 ЧАСОВ
                     </h3>
-                    <form action="calculation.php" class="hidde-block__form d-flex align-items-center mb-md-2 mb-xl-auto">
+                    <form action="calculation.php" method="POST"
+                          class="hidde-block__form d-flex align-items-center mb-md-2 mb-xl-auto">
                         <div class="form-group">
                             <input type="text" class="form-control form-control__input-name" name="name"
                                    placeholder="Ваше Имя">
@@ -234,7 +331,7 @@
         </div>
     </section>
     <section class="our-works">
-        <div class="py-5">
+        <div class="py-5" id="offers">
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
@@ -253,12 +350,13 @@
                             АСФАЛЬТОБЕТОННОГО <br>
                             ПОКРЫТИЯ
                         </h3>
-                        <p class="" >Подготовка основания, обработка поверхности <br>
+                        <p class="">Подготовка основания, обработка поверхности <br>
                             основания битумной эмульсией или жидким <br>
                             битумом, укладка асфальта.</p>
                         <div class="our-works__group-btn">
-                            <a href="#" class="our-works__btn">Проконсультироваться</a>
-                            <a href="#" class="our-works__btn">Узнать стоимость</a>
+                            <a href="#" data-toggle="modal" data-target="#myModal" class="our-works__btn">Проконсультироваться</a>
+                            <a href="#" data-toggle="modal" data-target="#myModalFind-the-cost" class="our-works__btn">Узнать
+                                стоимость</a>
                         </div>
                     </div>
 
@@ -276,8 +374,9 @@
                             нового основания на всех типах територий <br>
                             под ключ в краткие сроки</p>
                         <div class="our-works__group-btn">
-                            <a href="#" class="our-works__btn">Проконсультироваться</a>
-                            <a href="#" class="our-works__btn">Узнать стоимость</a>
+                            <a href="#" class="our-works__btn" data-toggle="modal" data-target="#myModal">Проконсультироваться</a>
+                            <a href="#" class="our-works__btn" data-toggle="modal" data-target="#myModalFind-the-cost">Узнать
+                                стоимость</a>
                         </div>
                     </div>
 
@@ -296,8 +395,9 @@
                             любых типах територий - от заправок до <br>
                             крупных промышленных учреждений</p>
                         <div class="our-works__group-btn">
-                            <a href="#" class="our-works__btn">Проконсультироваться</a>
-                            <a href="#" class="our-works__btn">Узнать стоимость</a>
+                            <a href="#" data-toggle="modal" data-target="#myModal" class="our-works__btn">Проконсультироваться</a>
+                            <a href="#" data-toggle="modal" data-target="#myModalFind-the-cost" class="our-works__btn">Узнать
+                                стоимость</a>
                         </div>
                     </div>
 
@@ -316,8 +416,9 @@
                             от парковок, площади, АЗС до крупных <br>
                             городские аллей и парков</p>
                         <div class="our-works__group-btn">
-                            <a href="#" class="our-works__btn">Проконсультироваться</a>
-                            <a href="#" class="our-works__btn">Узнать стоимость</a>
+                            <a href="#" class="our-works__btn" data-toggle="modal" data-target="#myModal">Проконсультироваться</a>
+                            <a href="#" class="our-works__btn" data-toggle="modal" data-target="#myModalFind-the-cost">Узнать
+                                стоимость</a>
                         </div>
                     </div>
 
@@ -330,13 +431,13 @@
             <h3 class="contact-form__heading">ЗАПОЛНИТЕ ДАННЫЕ И ПОЛУЧИТЕ ДЕТАЛЬНЫЙ РАСЧЕТ СТОИМОСТИ <br>
                 РАБОТ И МАТЕРИАЛОВ ДЛЯ ВАШЕГО ОБЪЕКТА В ТЕЧЕНИИ 24 ЧАСОВ
             </h3>
-            <form action="calculation.php" class="d-flex align-items-center">
+            <form action="calculation.php" method="POST" class="d-flex align-items-center">
                 <div class="form-group">
-                    <input type="text" class="form-control form-control__input-name" name="name" id="name"
+                    <input type="text" class="form-control form-control__input-name" name="name"
                            placeholder="Ваше Имя">
                 </div>
                 <div class="form-group">
-                    <input type="text" class="form-control form-control__input-phone" name="phone" id="phone"
+                    <input type="text" class="form-control form-control__input-phone" name="phone"
                            placeholder="Ваш телефон">
                 </div>
                 <button type="submit" class="btn form-control__input-btn">Отправить</button>
@@ -344,7 +445,7 @@
         </div>
     </section>
     <section class="work-examples">
-        <div class="py-5">
+        <div class="py-5" id="works">
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
@@ -362,31 +463,33 @@
 
                                 <div class="carousel-item active">
                                     <div class="card">
-                                        <img class="card-img-top" src="img/first.png" alt="Card image cap">
+                                        <img class="card-img-top" src="img/first-before.jpg" alt="Card image cap">
                                     </div>
 
                                 </div>
                                 <div class="carousel-item">
                                     <div class="card">
-                                        <img class="card-img-top" src="img/second.png" alt="Card image cap">
+                                        <img class="card-img-top" src="img/first-after.jpg" alt="Card image cap">
                                     </div>
                                 </div>
                                 <div class="card-body">
-                                    <p class="card-text mb-3"><b>Выполненные работы:</b>
-                                        частичный демонтаж старого покрытия, подготовка основания (выравнивание поверхности
-                                        щебнем), водоотведение,
-                                        уплотнение щебеночного основания катком, укладка асфальтобетонной смеси в два этапа
-                                        общим объемом 100 тонн.</p>
+                                    <p class="card-text" style="margin-bottom: 9.9%;"><b>Выполненные работы:</b>
+                                        частичный демонтаж старого покрытия, подготовка основания (выравнивание
+                                        поверхности щебнем), водоотведение,
+                                        уплотнение щебеночного основания катком, укладка асфальтобетонной смеси в два
+                                        этапа общим объемом 100 тонн.</p>
                                     <p class="card-text mb-0"><b>Площадь работ:</b> 1200 кв.метров</p>
                                     <p class="card-text"><b>Сроки выполения работ:</b> 4 дня</p>
                                 </div>
                             </div>
 
-                            <a class="carousel-control-prev" href="#carouselExampleControlsleft" role="button" data-slide="prev">
+                            <a class="carousel-control-prev" href="#carouselExampleControlsleft" role="button"
+                               data-slide="prev">
                                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                                 <span class="sr-only">Previous</span>
                             </a>
-                            <a class="carousel-control-next" href="#carouselExampleControlsleft" role="button" data-slide="next">
+                            <a class="carousel-control-next" href="#carouselExampleControlsleft" role="button"
+                               data-slide="next">
                                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                                 <span class="sr-only">Next</span>
                             </a>
@@ -397,39 +500,34 @@
                             <div class="carousel-inner">
                                 <div class="carousel-item active">
                                     <div class="card">
-                                        <img class="card-img-top" src="img/first.png" alt="Card image cap">
+                                        <img class="card-img-top" src="img/second-before.jpg" alt="Card image cap">
 
                                     </div>
                                 </div>
                                 <div class="carousel-item">
                                     <div class="card">
-                                        <img class="card-img-top" src="img/second.png" alt="Card image cap">
-                                        <!--<div class="card-body">-->
-                                            <!--<p class="card-text mb-3"><b>Выполненные работы:</b>-->
-                                                <!--нарезка корыто (выемка грунта), уплотнение грунта тяжелым грунтовым катком,-->
-                                                <!--устройство основания из крупного щебня фракции 40/70 и его уплотнение, расклинцовка-->
-                                                <!--основания щебнем фракции 20/40 и его уплотнение, укладка асфальтобетонной смеси-->
-                                                <!--объемом 410 тонн.</p>-->
-                                            <!--<p class="card-text mb-0"><b>Площадь работ:</b> 3000 кв.метров</p>-->
-                                            <!--<p class="card-text"><b>Сроки выполения работ:</b> 7 дней</p>-->
-                                        <!--</div>-->
+                                        <img class="card-img-top" src="img/second-after.jpg" alt="Card image cap">
+
                                     </div>
                                 </div>
                                 <div class="card-body">
                                     <p class="card-text mb-3"><b>Выполненные работы:</b>
-                                        частичный демонтаж старого покрытия, подготовка основания (выравнивание поверхности
-                                        щебнем), водоотведение,
-                                        уплотнение щебеночного основания катком, укладка асфальтобетонной смеси в два этапа
-                                        общим объемом 100 тонн.</p>
-                                    <p class="card-text mb-0"><b>Площадь работ:</b> 1200 кв.метров</p>
-                                    <p class="card-text"><b>Сроки выполения работ:</b> 4 дня</p>
+                                        нарезка корыто (выемка грунта), уплотнение грунта тяжелым грунтовым катком,
+                                        устройство основания из крупного щебня фракции 40/70 и его уплотнение,
+                                        расклинцовка основания щебнем фракции 20/40 и его уплотнение, укладка
+                                        асфальтобетонной смеси объемом 410 тонн.
+                                    </p>
+                                    <p class="card-text mb-0"><b>Площадь работ:</b> 3000 кв.метров</p>
+                                    <p class="card-text"><b>Сроки выполения работ:</b> 7 дня</p>
                                 </div>
                             </div>
-                            <a class="carousel-control-prev" href="#carouselExampleControlsRight" role="button" data-slide="prev">
+                            <a class="carousel-control-prev" href="#carouselExampleControlsRight" role="button"
+                               data-slide="prev">
                                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                                 <span class="sr-only">Previous</span>
                             </a>
-                            <a class="carousel-control-next" href="#carouselExampleControlsRight" role="button" data-slide="next">
+                            <a class="carousel-control-next" href="#carouselExampleControlsRight" role="button"
+                               data-slide="next">
                                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                                 <span class="sr-only">Next</span>
                             </a>
@@ -446,39 +544,32 @@
                             <div class="carousel-inner">
                                 <div class="carousel-item active">
                                     <div class="card">
-                                        <img class="card-img-top" src="img/first.png" alt="Card image cap">
+                                        <img class="card-img-top" src="img/third-before.jpg" alt="Card image cap">
 
                                     </div>
                                 </div>
                                 <div class="carousel-item">
                                     <div class="card">
-                                        <img class="card-img-top" src="img/second.png" alt="Card image cap">
-                                        <!--<div class="card-body">-->
-                                            <!--<p class="card-text mb-3"><b>Выполненные работы:</b>-->
-                                                <!--нарезка корыто (выемка грунта), уплотнение грунта тяжелым грунтовым катком,-->
-                                                <!--устройство основания из крупного щебня фракции 40/70 и его уплотнение, расклинцовка-->
-                                                <!--основания щебнем фракции 20/40 и его уплотнение, укладка асфальтобетонной смеси-->
-                                                <!--объемом 410 тонн.</p>-->
-                                            <!--<p class="card-text mb-0"><b>Площадь работ:</b> 3000 кв.метров</p>-->
-                                            <!--<p class="card-text"><b>Сроки выполения работ:</b> 7 дней</p>-->
-                                        <!--</div>-->
+                                        <img class="card-img-top" src="img/third-after.jpg" alt="Card image cap">
                                     </div>
                                 </div>
                                 <div class="card-body">
                                     <p class="card-text mb-3"><b>Выполненные работы:</b>
-                                        частичный демонтаж старого покрытия, подготовка основания (выравнивание поверхности
-                                        щебнем), водоотведение,
-                                        уплотнение щебеночного основания катком, укладка асфальтобетонной смеси в два этапа
-                                        общим объемом 100 тонн.</p>
+                                        частичный демонтаж бетонного покрытия,
+                                        выравнивание основания щебнем фракции 5/20.
+                                        розлив вяжущего материала,
+                                        укладка асфальтобетонной смеси объемом 120 тонн.</p>
                                     <p class="card-text mb-0"><b>Площадь работ:</b> 1200 кв.метров</p>
-                                    <p class="card-text"><b>Сроки выполения работ:</b> 4 дня</p>
+                                    <p class="card-text"><b>Сроки выполения работ:</b> 3 дня</p>
                                 </div>
                             </div>
-                            <a class="carousel-control-prev" href="#carouselExampleControlsleft-down" role="button" data-slide="prev">
+                            <a class="carousel-control-prev" href="#carouselExampleControlsleft-down" role="button"
+                               data-slide="prev">
                                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                                 <span class="sr-only">Previous</span>
                             </a>
-                            <a class="carousel-control-next" href="#carouselExampleControlsleft-down" role="button" data-slide="next">
+                            <a class="carousel-control-next" href="#carouselExampleControlsleft-down" role="button"
+                               data-slide="next">
                                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                                 <span class="sr-only">Next</span>
                             </a>
@@ -489,39 +580,29 @@
                             <div class="carousel-inner">
                                 <div class="carousel-item active">
                                     <div class="card">
-                                        <img class="card-img-top" src="img/first.png" alt="Card image cap">
+                                        <img class="card-img-top" src="img/four-before.jpg" alt="Card image cap">
 
                                     </div>
                                 </div>
                                 <div class="carousel-item">
                                     <div class="card">
-                                        <img class="card-img-top" src="img/second.png" alt="Card image cap">
-                                        <!--<div class="card-body">-->
-                                            <!--<p class="card-text mb-3"><b>Выполненные работы:</b>-->
-                                                <!--нарезка корыто (выемка грунта), уплотнение грунта тяжелым грунтовым катком,-->
-                                                <!--устройство основания из крупного щебня фракции 40/70 и его уплотнение, расклинцовка-->
-                                                <!--основания щебнем фракции 20/40 и его уплотнение, укладка асфальтобетонной смеси-->
-                                                <!--объемом 410 тонн.</p>-->
-                                            <!--<p class="card-text mb-0"><b>Площадь работ:</b> 3000 кв.метров</p>-->
-                                            <!--<p class="card-text"><b>Сроки выполения работ:</b> 7 дней</p>-->
-                                        <!--</div>-->
+                                        <img class="card-img-top" src="img/four-after.jpg" alt="Card image cap">
                                     </div>
                                 </div>
                                 <div class="card-body">
-                                    <p class="card-text mb-3"><b>Выполненные работы:</b>
-                                        частичный демонтаж старого покрытия, подготовка основания (выравнивание поверхности
-                                        щебнем), водоотведение,
-                                        уплотнение щебеночного основания катком, укладка асфальтобетонной смеси в два этапа
-                                        общим объемом 100 тонн.</p>
-                                    <p class="card-text mb-0"><b>Площадь работ:</b> 1200 кв.метров</p>
-                                    <p class="card-text"><b>Сроки выполения работ:</b> 4 дня</p>
+                                    <p class="card-text " style="margin-bottom: 14.7%;"><b>Выполненные работы:</b>
+                                        уплотнение основания, укладка асфальтобетонной смеси общим объемом 135 тонн.</p>
+                                    <p class="card-text mb-0"><b>Площадь работ:</b> 1500 кв.метров</p>
+                                    <p class="card-text"><b>Сроки выполения работ:</b> 2 дня</p>
                                 </div>
                             </div>
-                            <a class="carousel-control-prev" href="#carouselExampleControlsright-down" role="button" data-slide="prev">
+                            <a class="carousel-control-prev" href="#carouselExampleControlsright-down" role="button"
+                               data-slide="prev">
                                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                                 <span class="sr-only">Previous</span>
                             </a>
-                            <a class="carousel-control-next" href="#carouselExampleControlsright-down" role="button" data-slide="next">
+                            <a class="carousel-control-next" href="#carouselExampleControlsright-down" role="button"
+                               data-slide="next">
                                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                                 <span class="sr-only">Next</span>
                             </a>
@@ -536,7 +617,7 @@
             <h3 class="contact-form__heading">ЗАПОЛНИТЕ ДАННЫЕ И ПОЛУЧИТЕ ДЕТАЛЬНЫЙ РАСЧЕТ СТОИМОСТИ <br>
                 РАБОТ И МАТЕРИАЛОВ ДЛЯ ВАШЕГО ОБЪЕКТА В ТЕЧЕНИИ 24 ЧАСОВ
             </h3>
-            <form action="calculation.php" class="d-flex align-items-center">
+            <form action="calculation.php" method="POST" class="d-flex align-items-center">
                 <div class="form-group">
                     <input type="text" class="form-control form-control__input-name" name="name"
                            placeholder="Ваше Имя">
@@ -549,7 +630,7 @@
             </form>
         </div>
     </section>
-    <section class="about-us">
+    <section class="about-us" id="aboutUs">
         <div class="py-5">
             <div class="container">
                 <div class="row">
@@ -590,7 +671,7 @@
                     </div>
                 </div>
                 <div class="row my-3">
-                    <div class="col-md-12"><a href="#" class="about-us__btn">Получить консультацию</a></div>
+                    <div class="col-md-12"><a data-toggle="modal" data-target="#myModal" class="about-us__btn">Получить консультацию</a></div>
                 </div>
             </div>
         </div>
@@ -598,7 +679,7 @@
 </main>
 <footer class="footer">
     <section class="contact-us pb-5">
-        <div class="py-5">
+        <div class="py-5" id="contacts">
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
@@ -611,37 +692,41 @@
             <div class="row">
                 <div class="col-md-3">
                     <span class="contact-us__phone text-center text-md-left"><i class="fas fa-phone-volume"></i>Телефон</span>
-                    <span class="about-us__data mb-3 ">8 800 123 45 67</span>
+                    <span class="about-us__data mb-3 "><a style="color: #000;" href="tel:89034708207">8 (903) 470 82 07</a></span>
                 </div>
                 <div class="col-md-3">
-                    <span class="contact-us__email text-center text-md-left"> <i class="fas fa-envelope"></i>E-mail</span>
-                    <span class="about-us__data mb-3"> 123456@mail.ru </span>
+                    <span class="contact-us__email text-center text-md-left"> <i
+                            class="fas fa-envelope"></i>E-mail</span>
+                    <span class="about-us__data mb-3"> dsk.garant2017@yandex.ru </span>
                 </div>
                 <div class="col-md-3">
-                    <span class="contact-us__adress text-center text-md-left"><i class="fas fa-map-marker"></i>Адрес</span>
-                    <span class="about-us__data mb-3">ул.Добролюбова 1,корпус 3</span>
+                    <span class="contact-us__adress text-center text-md-left"><i
+                            class="fas fa-map-marker"></i>Адрес</span>
+                    <span class="about-us__data mb-3">г.Шахты, ул.Дежнева 19а</span>
                 </div>
                 <div class="col-md-3">
                     <span class="contact-us__schedule text-center text-md-left"><i class="fas fa-clock"></i>График работы </span>
-                    <span class="about-us__data mb-3">8:00 – 21:00 - Пн – Пт <br>
-                    Выходной - Субб - Воск</span>
+                    <span class="about-us__data mb-3">Пн – Cб - 8:00 – 21:00<br>
+                    Воскресение - Выходной</span>
                 </div>
             </div>
         </div>
     </section>
+    <section class="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2685.3168052046103!2d40.23974231508478!3d47.697686589675406!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40e2140e2b0f0261%3A0x8e64e81e023e404e!2z0YPQuy4g0JTQtdC20L3QtdCy0LAsIDE50JAsINCo0LDRhdGC0YssINCg0L7RgdGC0L7QstGB0LrQsNGPINC-0LHQuy4sINCg0L7RgdGB0LjRjywgMzQ2NTAz!5e0!3m2!1sru!2sus!4v1523661332341" width="100%" height="500" frameborder="0" style="border:0" allowfullscreen></iframe>    </section>
     <section class="contact-form-footer contact-form">
         <div class="container py-2">
             <h3 class="contact-form__heading my-3">ОСТАЛИСЬ ВОПРОСЫ? <br>
                 ЗАПОЛНИТЕ ФОРМУ И ПОЛУЧИТЕ БЕСПЛАТНУЮ КОНСУЛЬТАЦИЮ ОТ НАШЕГО СПЕЦИАЛИСТА
 
             </h3>
-            <form action="calculation.php" class="d-flex align-items-center">
+            <form action="calculation.php" method="POST" class="d-flex align-items-center">
                 <div class="form-group">
-                    <input type="text" class="form-control form-control__input-name" name="name" id="name"
+                    <input type="text" class="form-control form-control__input-name" name="name"
                            placeholder="Ваше Имя">
                 </div>
                 <div class="form-group">
-                    <input type="text" class="form-control form-control__input-phone" name="phone" id="phone"
+                    <input type="text" class="form-control form-control__input-phone" name="phone"
                            placeholder="Ваш телефон">
                 </div>
                 <button type="submit" class="btn form-control__input-btn">Отправить</button>
@@ -658,7 +743,7 @@
                     <a href="#">dskgarant.ru</a>
                 </div>
                 <div class="col-md-4 d-flex align-items-center justify-content-center">
-                    <a href="tel:88001234567">8 800 123 45 67</a>
+                    <a href="tel:89034708207">8 (903) 470 82 07</a>
                 </div>
             </div>
         </div>
@@ -667,15 +752,20 @@
 <script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js"
         integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+"
         crossorigin="anonymous"></script>
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-        crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
         integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
         crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
+<script>
+    $("body").on("click", "a.anchor", function () {
+        var idtop = $($(this).attr("href")).offset().top;
+        $('html,body').animate({scrollTop: idtop}, 2000);
+        return false;
+    });
+</script>
 
 </body>
 

@@ -60,7 +60,7 @@
 @media only screen and (max-width: 480px) {
   /* line 59, ../sass/media.sass */
   .main .carousel-control-prev, .main .carousel-control-next {
-    bottom: 66%; }
+    bottom: 50%; }
   /* line 62, ../sass/media.sass */
   .main .our-works .our-works__group-btn {
     -webkit-box-orient: vertical;
@@ -73,10 +73,17 @@
 /* */
 /* Custom, iPhone Retina */
 @media only screen and (max-width: 320px) {
-  /* line 73, ../sass/media.sass */
+  /* line 74, ../sass/media.sass */
+  #myModal .modal-body__consult form input {
+    width: 100%; }
+  /* line 76, ../sass/media.sass */
+  #myModal .modal-body__consult form button {
+    width: 100%; }
+
+  /* line 80, ../sass/media.sass */
   .main .our-works p {
     font-size: 14px; }
-  /* line 76, ../sass/media.sass */
+  /* line 83, ../sass/media.sass */
   .main .our-works__group-content br {
     display: none; } }
 /* */
